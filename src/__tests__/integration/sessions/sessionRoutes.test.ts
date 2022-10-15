@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-import AppDataSource from "../../../DataBase/data-source";
+import AppDataSource from "../../../data-source";
 import request from "supertest"
 import app from "../../../app";
 import { mockedAdmin, mockedAdminLogin} from "../../mocks"
@@ -24,7 +24,7 @@ describe("/login", () => {
 
     test("POST /login -  should be able to login with the user",async () => {
         const response = await request(app).post("/login").send(mockedAdminLogin);
-        
+ 
         expect(response.body).toHaveProperty("token")
         expect(response.status).toBe(200)
      

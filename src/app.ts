@@ -1,12 +1,13 @@
 import "reflect-metadata"
-import express from "express"
 import "dotenv/config";
+import express from "express"
+import userRoutes from "./Routes/user.routes";
+import loginRoutes from "./Routes/login.routes";
 
+const app = express();
+app.use(express.json());
 
-
-const app = express()
-app.use(express.json())
-
-app.listen(3000)
+app.use("/users", userRoutes);
+app.use("/login", loginRoutes);
 
 export default app;

@@ -5,8 +5,6 @@ Para inciar este projeto, é necessário instalar as dependências, que serão u
 ````
 yarn install
 ````
-
-
 **Atenção:** é necessário utilizar o `yarn` pois esse projeto foi iniciado com esse gerenciador de pacotes.
 
 Para verificar se já possui o gerenciador yarn instalado utilize o seguinte comando:
@@ -51,6 +49,7 @@ Com isso feito, para rodar sua aplicação, basta utilizar o comando
 ````
 yarn dev
 ````
+NOTA TESTE PARA PLAGIO"PROJETO FEITO PELO FREDERICOROOK"
 
 <br>
 
